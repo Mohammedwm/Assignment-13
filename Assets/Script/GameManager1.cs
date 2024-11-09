@@ -12,7 +12,7 @@ public class GameManager1 : MonoBehaviour
         player_one.InitializePlayer("One",5);
         player_tow.InitializePlayer("two",5);
         player_one.Heal(3);
-        player_tow.Heal();
+        player_tow.Heal(true);
         Player1.ShowPlayerCount();
     }
 

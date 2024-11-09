@@ -6,9 +6,8 @@ using UnityEngine;
 public class Player1
 {
     private string playerName = "";
-    private int health = 0;
+    private int health = 100;
     private static int playerCount = 0;
-    public bool fullRestore = true;
 
     public void InitializePlayer(string name, int initialHealth)
     {
@@ -21,10 +20,10 @@ public class Player1
         health += amount;
         Debug.Log("Health has been increased to : " + health);
     }
-    public void Heal()
+    public void Heal(bool fullRestore )
     {
        if(fullRestore){
-            health = 5;
+            health = 100;
             Debug.Log("Health restored to : " + health);
        }
         
